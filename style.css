@@ -274,3 +274,118 @@ section {
         }
     }
 }
+
+@media screen and (max-width: 1030px) {
+    header {
+        justify-content: center;
+        padding: 30px 100px;
+
+        & h1 {
+            font-size: 60px;
+        }
+
+        & ul {
+            display: none;
+        }
+    }
+
+    section {
+        & .list {
+            width: 85vw;
+
+            & .item {
+
+                & .car-img {
+                    transform: translate(-2%, -50%);
+                    width: 100%;
+                }
+
+                & .content {
+                    inset: 0;
+                    margin: auto;
+                    width: 85%;
+                    align-items: center;
+
+                    & h2 {
+                        margin-bottom: 350px;
+                    }
+
+                    & .description {
+                        text-align: center;
+                        max-width: 600px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        & .arrows {
+            width: 85vw;
+        }
+
+        & .indicators {
+            top: 85%;
+            left: 4%;
+            transform: translateX(-0%);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        padding: 20px 0px;
+        width: 100vw;
+
+        & h1 {
+            font-size: 30px;
+        }
+    }
+
+    section {
+        & .list {
+            width: 85vw;
+
+            & .item {
+
+                & .car-img {
+                    transform: translate(-2%, -50%);
+                    width: 100%;
+                }
+
+                & .content {
+                    width: 90%;
+
+                    & h2 {
+                        margin-bottom: 250px;
+                        font-size: 46px;
+                    }
+
+                    & .description {
+                        max-width: 450px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        & .arrows {
+            width: 95vw;
+        }
+
+        & .indicators {
+            height: 100px;
+            top: 87%;
+            left: 4.5%;
+            transform: translateX(-0%);
+            align-items: center;
+            justify-content: center;
+
+            & .number {
+                font-size: 3em;
+            }
+        }
+    }
+}
