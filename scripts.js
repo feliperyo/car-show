@@ -3,6 +3,7 @@ let nextButton = document.getElementById('next')
 let container = document.querySelector('.container')
 let items = container.querySelectorAll('.list .item')
 let indicator = document.querySelector('.indicators')
+let number = indicator.querySelector('.number')
 let dots = indicator.querySelectorAll('ul li')
 let list = container.querySelector('.list')
 
@@ -19,7 +20,7 @@ function setSlider() {
 
     dots[active].classList.add('active')
 
-    indicator.querySelector('.number').innerHTML = active + 1
+    number.innerHTML = number < 10 ? '0' + (active + 1) : active + 1
 }
 
 nextButton.onclick = () => {
