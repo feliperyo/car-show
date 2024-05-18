@@ -19,7 +19,7 @@ function setSlider() {
 
     dots[active].classList.add('active')
 
-    indicator.querySelector('.number').innerHTML = '0' + (active + 1)
+    indicator.querySelector('.number').innerHTML = active + 1
 }
 
 nextButton.onclick = () => {
